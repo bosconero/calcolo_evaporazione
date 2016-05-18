@@ -1,3 +1,46 @@
+function controllo(){
+if(document.getElementById('temperaturaaria').value==''){
+attenzione.innerHTML="<span style='background-color:#222;font:bold 16px arial;color:#fff;line-height:22px;display:block;margin:0 auto;'>Devi inserire la temperatura dell'aria</span>" ;
+document.getElementById('temperaturaaria').focus();
+} else{
+controllo1()}
+}
+function controllo1(){
+if(document.getElementById('temperaturacls').value==''){
+attenzione.innerHTML="<span style='background-color:#222;font:bold 16px arial;color:#fff;line-height:22px;display:block;margin:0 auto;'>Devi inserire la temperatura del calcestruzzo</span>" ;
+document.getElementById('temperaturacls').focus();
+} else{
+controllo2()}
+}
+function controllo2(){
+if(document.getElementById('umidita').value==''){
+attenzione.innerHTML="<span style='background-color:#222;font:bold 16px arial;color:#fff;line-height:22px;display:block;margin:0 auto;'>Devi inserire l'umidit$agrave; relativa</span>" ;
+document.getElementById('umidita').focus();
+} else{
+controllo3()}
+}
+function controllo3(){
+if(document.getElementById('velvento').value==''){
+attenzione.innerHTML="<span style='background-color:#222;font:bold 16px arial;color:#fff;line-height:22px;display:block;margin:0 auto;'>Devi inserire la velocit&agrave; del vento </span>" ;
+document.getElementById('velvento').focus();
+} else{
+controllo4()}
+}
+function controllo4(){
+if(document.getElementById('quantcem').value==''){
+attenzione.innerHTML="<span style='background-color:#222;font:bold 16px arial;color:#fff;line-height:22px;display:block;margin:0 auto;'>Devi inserire il quantitativo di cemento per mc di calcestruzzo</span>" ;
+document.getElementById('quantcem').focus();
+} else{
+controllo5()}
+}
+function controllo5(){
+if(document.getElementById('spesspav').value==''){
+attenzione.innerHTML="<span style='background-color:#222;font:bold 16px arial;color:#fff;line-height:22px;display:block;margin:0 auto;'>Devi lo spessore del pavimento</span>" ;
+document.getElementById('spesspav').focus();
+} else{
+evaporation()}
+}
+
 function evaporation(){
 document.getElementById('pinserimento').style.display="none";
 document.getElementById('risultati').style.display="block";
