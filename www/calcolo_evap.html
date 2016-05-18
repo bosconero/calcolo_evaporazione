@@ -39,7 +39,7 @@
       <label for="temperaturaaria">Temperatura dell'aria <b>C<sup>&#186;</sup></b> </label>
        </div>
        <div class="inputins"> 
-        <input type="number" name="temperaturaaria" id="temperaturaaria" width="30" />
+        <input type="number" name="temperaturaaria" id="temperaturaaria" width="30" autofocus />
        </div>
        </div>
        
@@ -87,9 +87,10 @@
        <input type="number" name="spesspav" id="spesspav" width="30" /> 
        </div>
        </div>
-       <button class="bottoner" id="calcola" onclick="evaporation ()">Calcola</button>
+       <button class="bottoner" id="calcola" onclick="controllo ()">Calcola</button>
        <button class="bottonev" type="reset" value="Reset">Reset </button>
-  </div>     
+  </div>   
+  <div id="attenzione"></div>  
  </div>
                                                      <br /> 
 <div id="risultati">   
