@@ -1,5 +1,5 @@
 body{margin:0;max-width:100%;}
-#contentapp{width:100%;display:block;margin:0 auto;background-color:#fff;}
+#contentapp{width:100%;display:block;margin:20dp auto;background-color:#fff;}
 #intro{width:80%; padding:8dp 16dp 15dp 16dp; font:normal 14sp arial;color:#333;display:block;margin:0 auto;}
 
 #pinserimento{background-color:#ffffbd;min-height:100%}
