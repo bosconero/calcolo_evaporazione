@@ -1,6 +1,6 @@
 body{margin:0;max-width:100%;}
 #contentapp{width:100%;display:block;margin:0 auto;background-color:#fff;}
-#intro{width:80%; padding:8px 16px 15px 16px; font:normal 14px arial;color:#333;display:block;margin:0 auto;}
+#intro{width:80%; padding:8dp 16dp 15dp 16dp; font:normal 14sp arial;color:#333;display:block;margin:0 auto;}
 
 #pinserimento{background-color:#ffffbd;min-height:100%}
   #inserimento{width:98%;   
@@ -16,22 +16,23 @@ body{margin:0;max-width:100%;}
   .ins{width:40%;background-color:#fff;
 
   border:2px solid #ddd;
-  box-shadow:5px 5px 5px #888888; 10px 10px 5px #888888; 5px 5px 5px #888888;
+  box-shadow: 5px 5px 5px #888; 
   margin:2%;
  }   
-  .titoloins{width:100%;background-color:#aa2222;font:bold 14px arial;color:#fff;line-height:20px; text-align:center;}
-  input{width:50px;height:30px;display:block;margin:15px auto;box-shadow:-3px 3px 4px eee;text-align:center;font:bold 14px arial;color:#000044;}
-  .inputins{line-height:40px;display:block;margin:auto;}
-  button.bottoner, button.bottonev{width:100px;height:50px; font:bold 14px arial;color:#fff;padding:3px;text-align:center; margin-top:20px;margin-left:10px;margin-right:10px;}
+  .titoloins{width:100%;background-color:#aa2222;font:bold 14sp arial;color:#fff;line-height:20sp; text-align:center;}
+  input{width:50dp;height:30dp;display:block;margin:15dp auto;box-shadow:-3px 3px 4px #eee;text-align:center;font:bold 14dp arial;color:#000044;}
+  .inputins{line-height:40sp;display:block;margin:auto;}
+  button.bottoner, button.bottonev{width:100px;height:50dp; font:bold 14sp arial;color:#fff;padding:3px;text-align:center; margin-top:20dp;margin-left:10dp;margin-right:10dp;}
   button.bottoner{background-color:#e02200; border:2px solid #c42200;box-shadow:5px 5px 5px #aa2200; }
   button.bottonev{background-color:#229900; border:2px solid #226600; box-shadow:5px 5px 5px #224d00;}
-#boxalert{width:90%;padding:0 16px 0 16px; font:normal 14px arial;color:#333;dispaly:block;margin 0 auto;} 
-#tempo{width:98%;padding:0px 16px 0 16px;font:normal 14px arial;color:#333;dispaly:block;margin 0 auto;}  
-#contentindex{width:100%;min-height:100%;background: #ddd; /* For browsers that do not support gradients */
+#boxalert{width:90%;padding:0 16dp 0 16dp; font:normal 14sp arial;color:#333;display:block;margin: 0 auto;} 
+#tempo{width:98%;padding:0px 16dp 0 16dp;font:normal 14sp arial;color:#333;display:block;margin: 0 auto;}  
+#contentindex{margin-top:0;margin-left:0;width:100%;min-height:100%;#ddd; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#ddd, #fff); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#ddd, #fff); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#ddd, #fff); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#ddd, #fff); /* Standard syntax */
+      
       
   margin-top:0px;margin-left:0px;}
 .boxindex{display:-webkit-flex; 
@@ -42,21 +43,21 @@ body{margin:0;max-width:100%;}
           flex-flow: column;
          justify-content:center;
           align-content:space-between;
-          display:block;marign:0 auto;}
-.boxtitle{max-width:98%;padding:5px 16px 15px 16px;display:block;margin:0 auto;}
-.titleindex{font:bold 22px arial;color:#000044;text-align:center;}
-.indeximage{width:98%;display:block;marign:0 auto;}
+          display:block;margin:0 auto;}
+.boxtitle{max-width:98%;padding:5dp 16dp 15dp 16dp;display:block;margin:0 auto;}
+.titleindex{font:bold 22sp arial;color:#000044;text-align:center;}
+.indeximage{width:98%;display:block;margin:0 auto;}
 .imgindex{max-width:100%;display:block;margin:0 auto;}
-.contentindex{width:98%; display:block;marign:0 auto;}
-.cntindx{width:80%; font:normal 18px arial; color:#000044;display:block;margin:0 auto; text-align:center;}
+.contentindex{width:98%; display:block;margin:0 auto;}
+.cntindx{width:80%; font:normal 18sp arial; color:#000044;display:block;margin:0 auto; text-align:center;}
 .lgbutton{width:100%;height:50px;background:#000044;
 background: -webkit-linear-gradient(#000044, #000099); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#000044, #000099); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#000044, #000099); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#000044, #000099); /* Standard syntax */
-    border:{1px solid #000044;}
+    border:1px solid #000044;
     box-shadow:5px 5px 5px #000066;
-    font:bold 22px arial;color:#fff;
-.introtext{width:80%;display:block;margin:0 auto; font:normal 14px arial; color:#333;padding:15px 16px 15px 16px;}
+    font:bold 22sp arial;color:#fff;  }
+.introtext{width:80%;display:block;margin:0 auto; font:normal 14sp arial; color:#333;padding:15dp 16dp 15dp 16dp;}
+   
     
-    }    
