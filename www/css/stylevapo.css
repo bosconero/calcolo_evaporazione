@@ -61,4 +61,5 @@ background: -webkit-linear-gradient(#000044, #000099); /* For Safari 5.1 to 6.0 
     font:bold 22px arial;color:#fff;  }
 .introtext{width:80%;display:block;margin:0 auto; font:normal 14px arial; color:#333;padding:15px 16px 15px 16px;}
 #scelta{width:98%; display:block; margin:0 auto;text-align:center;}   
-.scelta{width:98%; display:block; margin:0 auto;text-align:center;}    
+.scelta{width:98%; display:block; margin:0 auto;text-align:center;}   
+#risultati{margin-top:48px;}
