@@ -9,7 +9,7 @@ body{margin:0;max-width:100%;}
       
       
   margin-top:0px;margin-left:0px;}
-#pinserimento{background-color:#ffffbd;min-height:100%}
+#pinserimento{background-color:#ffffbd;background-size:cover;min-height:100%}
   #inserimento{width:98%;   
   display:-webkit-flex; 
   display: -ms-flexbox; 
@@ -45,7 +45,7 @@ body{margin:0;max-width:100%;}
           flex-flow: column;
          justify-content:center;
           align-content:space-between;
-          display:block;margin:0px auto;}
+          display:block;margin:48px auto;}
 .boxtitle{max-width:98%;padding:5px 16px 15px 16px;display:block;margin:0 auto;}
 .titleindex{font:bold 22px arial;color:#000044;text-align:center;}
 .indeximage{width:98%;display:block;margin:0 auto;}
@@ -60,9 +60,9 @@ background: -webkit-linear-gradient(#000044, #000099); /* For Safari 5.1 to 6.0 
     border:1px solid #000044;
     box-shadow:5px 5px 5px #000066;
     font:bold 22px arial;color:#fff;  }
-.introtext{width:80%;display:block;margin:0 auto; font:normal 14px arial; color:#333;padding:15px 16px 15px 16px;}
+.introtext{width:80%;display:block;margin:0 auto; font:normal 14px arial; color:#333;padding:5px 16px 15px 5px;}
 button.entra{dispay:block;width:100%;height:60px;margin-bottom:0;text-align:center;background-color:transparent;box-shadow:none;border:none;}
 .entra img{display:block;margin:0 auto;border:none;background-color:inherit;}
 .entra img:hover{background:url('img/entrahover.png'};
  
-#scelta, #scelta1{width:98%; display:block; margin:0 auto;text-align:center;}
+#scelta, #scelta1{width:98%;text-align:center;}
