@@ -3,14 +3,14 @@
   <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="generator" content="PSPad editor, www.pspad.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" id="viewport"/> 
 <meta name="HandheldFriendly" content="True" /> 
  
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/stylevapo.css" />
     <script language="javaScript" src="js/calcoli.js"></script>
   <title>Stima evaporazione acqua dal calcestruzzo</title>
-<script> document.getElementById("viewport").setAttribute("content","user-scalable=no, initial-scale="+viewportScale+", minimum-scale=0.2, maximum-scale=2, width=device-width"); </script>
+
   </head>
   <body onload="init()">
 <div id="contentapp">
@@ -18,15 +18,14 @@
   <h1 class="titleindex">CALCOLO DELLA EVAPORAZIONE DELL'ACQUA </h1> <br />
   <p class="introtext"> Questo calcolo e utile per conoscere:
   <ol>                                         
-
   <li>La possibilita reale di formazione di fessure allarmando su:</li> 
   <ul>
   <li>pericolo potenziale di fessure</li>
   <li>pericolo certo di fessurazione </li>
   </ul>
-  <li>La possibilita di conoscere il tempo necessario di attesa per evitare la "crosta" e la delaminazione dello strato d'usura</li> <br />
+  <li>La possibilita di conoscere il tempo necessario di attesa per evitare la "crosta" e la delaminazione dello strato d'usura</li> 
   </ol>
- <br />
+
 </p> 
 
   <button id="scendi" onclick="fineintro()" style="border:none;background-color:#fff;display:block;margin:0 auto;"><img src="img/btndwn.png" width="60"  /> </button>
@@ -35,7 +34,7 @@
   <div id="inserimento">
        <div class="ins">
        <div class="titoloins">
-      <label for="temperaturaaria">Temperatura dell'aria <b>C<sup>&#186;</sup></b> </label>
+      <label for="temperaturaaria">Temp. aria <b><sup>&#186;</sup>C</b> </label>
        </div>
        <div class="inputins"> 
         <input type="number" name="temperaturaaria" id="temperaturaaria" width="30" autofocus />
@@ -44,7 +43,7 @@
        
        <div class="ins">
        <div class="titoloins">
-      <label for="temperaturacls">Temperatura cls in <b>C<sup>&#186;</sup></b></label>
+      <label for="temperaturacls">Temp. cls   <b><sup>&#186;</sup>C</b></label>
        </div>
        <div class="inputins"> 
       <input type="number" name="temperaturacls" id="temperaturacls" width="30" />
@@ -53,7 +52,7 @@
        
        <div class="ins">
        <div class="titoloins">
-       <label for="umidita">Umidita Relativa </label>
+       <label for="umidita">Umidita Rel. % </label>
        </div>
        <div class="inputins"> 
        <input type="number" name="umidita" id="umidita" width="30" />
@@ -62,7 +61,7 @@
        
        <div class="ins">
        <div class="titoloins">
-       <label for="velvento">Velocita del Vento</label>
+       <label for="velvento">Vento Km/h</label>
        </div>
        <div class="inputins"> 
        <input type="number" name="velvento" id="velvento" width="30" />
@@ -71,7 +70,7 @@
        
        <div class="ins">
        <div class="titoloins">
-       <label for="quantcem">Quantitativo di Cemento a m<sup>3</sup> </label>
+       <label for="quantcem">Kg di cemento a m<sup>3</sup> </label>
        </div>
        <div class="inputins"> 
        <input type="number" name="quantcem" id="quantcem" width="30" /> 
@@ -80,14 +79,14 @@
        
        <div class="ins">
        <div class="titoloins">
-       <label for="spesspav">Spessore del pavimento in <b>cm</b> </label>
+       <label for="spesspav">Spessore pav.<b>cm</b> </label>
        </div>
        <div class="inputins"> 
        <input type="number" name="spesspav" id="spesspav" width="30" /> 
        </div>
        </div>
    </div> 
-    <div id="scelta">  
+    <div id="scelta" style="text-align:center;">  
     <br />     
        <button class="bottonev" id="calcola" onclick="controllo ()">Calcola</button>
        <button class="bottoner" type="reset" value="Reset">Reset </button>
@@ -103,7 +102,7 @@
 
   <br /><br />
 <div id="tempo"></div>      <br /><br />
- <div id="scelta1">
+ <div id="scelta1" style="text-align:center;">
  <button class="bottoner" id="ripeti" onclick="ripeti ()">Ripeti</button>
  <button class="bottonev" id="esci"  onclick="esci()">Esci </button>
 </div>
