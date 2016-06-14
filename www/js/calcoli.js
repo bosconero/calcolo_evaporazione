@@ -66,11 +66,11 @@ fkwind=Math.pow(10,-6)*kwind;
 rateevap=kdiffcla*fkwind;
 ratevap=Math.round(rateevap*Math.pow(10,2))/Math.pow(10,2);
 if(ratevap < 0.5){
-alertfess="<span style='font:normal 14px arial; color:#006600'>Alle attuali condizioni atmosferiche, i litri di acqua evaporata ogni ora al mq saranno pari a <br /></span><span style='display:block;margin:0 auto;font:bold 24px arial;color:#006600;text-align:center;'> "+ratevap+"</span><br /><span style='font:bold 20px arial;color:#006600;'> NON SUSSISTE PERICOLO DI FESSURAZIONE</span>";
+alertfess="<span style='font:normal 14px arial; color:#006600'>Alle attuali condizioni atmosferiche, i litri di acqua evaporata ogni ora al mq saranno pari a <br /></span><span style='display:block;margin:0 auto;font:bold 24px arial;color:#006600;text-align:center;'> "+ratevap+"</span><br /><span style='font:bold 20px arial;color:#006600;text-align:center;'> NON SUSSISTE PERICOLO DI FESSURAZIONE</span>";
 }else if(ratevap > 1 ){
-alertfess="<span style='font:normal 14px arial; color:#aa2200'>Alle attuali condizioni atmosferiche, i litri di acqua evaporata ogni ora al mq saranno pari a <br /></span><span style='display:block;margin:0 auto;font:bold 24px arial;color:#aa2200;text-align:center;'> "+ratevap+"</span><br /><span style='font:bold 20px arial;color:#aa2200;'> E' CERTA LA POSSIBILITA' DI FESSURAZIONE</span>";
+alertfess="<span style='font:normal 14px arial; color:#aa2200'>Alle attuali condizioni atmosferiche, i litri di acqua evaporata ogni ora al mq saranno pari a <br /></span><span style='display:block;margin:0 auto;font:bold 24px arial;color:#aa2200;text-align:center;'> "+ratevap+"</span><br /><span style='font:bold 20px arial;color:#aa2200;text-align:center;'> E' CERTA LA POSSIBILITA' DI FESSURAZIONE</span>";
 }else{
-alertfess="<span style='font:normal 14px arial; color:#222'>Alle attuali condizioni atmosferiche, i litri di acqua evaporata ogni ora al mq saranno pari a <br /></span><span style='display:block;margin:0 auto;font:bold 24px arial;color:#222;text-align:center;'> "+ratevap+"</span><br /><span style='font:bold 20px arial;color:#222;'> E' CERTA LA POSSIBILITA' DI FESSURAZIONE</span>";
+alertfess="<span style='font:normal 14px arial; color:#222'>Alle attuali condizioni atmosferiche, i litri di acqua evaporata ogni ora al mq saranno pari a <br /></span><span style='display:block;margin:0 auto;font:bold 24px arial;color:#222;text-align:center;'> "+ratevap+"</span><br /><span style='font:bold 20px arial;color:#222;text-align:center;'> E' CERTA LA POSSIBILITA' DI FESSURAZIONE</span>";
 }
 boxalert.innerHTML=alertfess;
 
@@ -120,7 +120,7 @@ document.getElementById('intro').style.display="none";
 document.getElementById('pinserimento').style.display="block";
 }
 function esci(){
- navigator.app.exitApp();
+ window.close();
 }
 function ripeti(){
 window.location="index.html";
