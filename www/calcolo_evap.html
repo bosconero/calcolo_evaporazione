@@ -1,25 +1,23 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
-  <meta name="charset" content="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" id="viewport"/> 
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /> 
 <meta name="HandheldFriendly" content="True" /> 
  
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/stylevapo.css" />
     <script language="javaScript" src="js/calcoli.js"></script>
   <title>Stima evaporazione acqua dal calcestruzzo</title>
-<script> 
-var viewportScale = 1 / window.devicePixelRatio;
-document.getElementById("viewport").setAttribute("content","user-scalable=no, initial-scale="+viewportScale+", minimum-scale=0.2, maximum-scale=2, width=device-width"); </script>
+<script> document.getElementById("viewport").setAttribute("content","user-scalable=no, initial-scale="+viewportScale+", minimum-scale=0.2, maximum-scale=2, width=device-width"); </script>
   </head>
   <body onload="init()">
-
-    <div id="contentapp">
+<div id="contentapp">
    <div id="intro"> 
   <h1 class="titleindex">CALCOLO DELLA EVAPORAZIONE DELL'ACQUA </h1> <br />
   <p class="introtext"> Questo calcolo e utile per conoscere:
-                                        
+  <ol>                                         
 
   <li>La possibilita reale di formazione di fessure allarmando su:</li> 
   <ul>
@@ -27,7 +25,7 @@ document.getElementById("viewport").setAttribute("content","user-scalable=no, in
   <li>pericolo certo di fessurazione </li>
   </ul>
   <li>La possibilita di conoscere il tempo necessario di attesa per evitare la "crosta" e la delaminazione dello strato d'usura</li> <br />
-  
+  </ol>
  <br />
 </p> 
 
@@ -88,12 +86,16 @@ document.getElementById("viewport").setAttribute("content","user-scalable=no, in
        <input type="number" name="spesspav" id="spesspav" width="30" /> 
        </div>
        </div>
-       <button class="bottoner" id="calcola" onclick="controllo ()">Calcola</button>
-       <button class="bottonev" type="reset" value="Reset">Reset </button>
-  </div>   
-  <br /><br />
-  <div id="attenzione"></div>  
- </div>
+   </div> 
+    <div id="scelta">  
+    <br />     
+       <button class="bottonev" id="calcola" onclick="controllo ()">Calcola</button>
+       <button class="bottoner" type="reset" value="Reset">Reset </button>
+                                         <br />
+      <div id="attenzione"></div>  
+     </div>    
+     
+       </div>
                                                      <br /> 
 <div id="risultati">   
                          
@@ -101,10 +103,10 @@ document.getElementById("viewport").setAttribute("content","user-scalable=no, in
 
   <br /><br />
 <div id="tempo"></div>      <br /><br />
-
+ <div id="scelta1">
  <button class="bottoner" id="ripeti" onclick="ripeti ()">Ripeti</button>
  <button class="bottonev" id="esci"  onclick="esci()">Esci </button>
-
+</div>
  </div>
 </div>
 <br />
