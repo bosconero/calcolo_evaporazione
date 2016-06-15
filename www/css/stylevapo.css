@@ -1,6 +1,6 @@
 body{margin:0;max-width:100%;}
 #contentapp{width:100%;display:block;margin:0 auto;background-color:#fff;}
-#intro{width:80%; padding:0px 16px 15px 16px; font:normal 14px arial;color:#333;display:block;margin:48px auto;}
+#intro{width:80%; padding:38px 16px 15px 16px; font:normal 14px arial;color:#333;display:block;margin:48px auto;}
 #contentindex{margin-top:0;margin-left:0;width:100%;min-height:100%;#ddd; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#ddd, #fff); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#ddd, #fff); /* For Opera 11.1 to 12.0 */
