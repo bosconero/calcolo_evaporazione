@@ -81,7 +81,7 @@ cacqua=(spesscls/100)*bacqua;
 acquaevap=cacqua-2;       ;
 
 //calcolo tempo
-tempfratt=acquaevap-ratevap;
+tempfratt=acquaevap/ratevap;
 tempfr=Math.round(tempfratt*Math.pow(10,2))/Math.pow(10,2);
 htempfr=Math.floor(tempfr);
 ktempfr=tempfr-Math.floor(tempfr);
