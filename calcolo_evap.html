@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" id="viewport"/> 
+<meta name="HandheldFriendly" content="True" /> 
+ 
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/stylevapo.css" />
+    <script language="javaScript" src="js/calcoli.js"></script>
+  <title>Stima evaporazione acqua dal calcestruzzo</title>
+
+  </head>
+  <body onload="init()">
+<div id="contentapp">
+   <div id="intro"> 
+  <h1 class="titleindex">CALCOLO DELLA EVAPORAZIONE DELL'ACQUA </h1> <br />
+  <p class="introtext"> Questo calcolo e utile per conoscere:
+  <ul>                                         
+  <li> la possibilita reale o potenziale di formazione di fessure in fase
+plastica</li> 
+
+  <li>se, nel caso di clima troppo caldo, sia opportuno rinviare il getto
+nel pomeriggio
+</li>
+  <li>la finestra di frattazzabilita per evitare la "crosta superficiale",
+il degrado da delaminazione e la situazione di sabbie mobili</li>
+
+ 
+  </ul>
+
+</p> 
+
+  <button id="scendi" onclick="fineintro()" style="border:none;background-color:#fff;display:block;margin:0 auto;"><img src="img/btndwn.png" width="60"  /> </button>
+  </div>
+  <div id="pinserimento">
+  <div id="inserimento">
+       <div class="ins">
+       <div class="titoloins">
+      <label for="temperaturaaria">Temp. aria <b><sup>&#186;</sup>C</b> </label>
+       </div>
+       <div class="inputins"> 
+        <input type="number" name="temperaturaaria" id="temperaturaaria" width="30" autofocus />
+       </div>
+       </div>
+       
+       <div class="ins">
+       <div class="titoloins">
+      <label for="temperaturacls">Temp. cls   <b><sup>&#186;</sup>C</b></label>
+       </div>
+       <div class="inputins"> 
+      <input type="number" name="temperaturacls" id="temperaturacls" width="30" />
+       </div>
+       </div>
+       
+       <div class="ins">
+       <div class="titoloins">
+       <label for="umidita">Umidita Rel. % </label>
+       </div>
+       <div class="inputins"> 
+       <input type="number" name="umidita" id="umidita" width="30" />
+       </div>
+       </div>
+       
+       <div class="ins">
+       <div class="titoloins">
+       <label for="velvento">Vento Km/h</label>
+       </div>
+       <div class="inputins"> 
+       <input type="number" name="velvento" id="velvento" width="30" />
+       </div>
+       </div>
+       
+       <div class="ins">
+       <div class="titoloins">
+       <label for="quantcem">Kg di cemento/m<sup>3</sup> </label>
+       </div>
+       <div class="inputins"> 
+       <input type="number" name="quantcem" id="quantcem" width="30" /> 
+       </div>
+       </div>
+       
+       <div class="ins">
+       <div class="titoloins">
+       <label for="spesspav">Spessore pav.<b>cm</b> </label>
+       </div>
+       <div class="inputins"> 
+       <input type="number" name="spesspav" id="spesspav" width="30" /> 
+       </div>
+       </div>
+       
+         <div class="ins">
+       <div class="titoloins">
+       <label for="spesspav">Classe di resistenza cls</label>
+       </div>
+       <div class="inputins" style="text-align:center;line-height:1.5em;"> 
+       <select id="classe"> 
+       <option value="XC1">XC1</option>
+       <option value="XC2">XC2</option>
+       <option value="XC3">XC3</option>
+       <option value="XC4">XC4</option>
+       </select>
+       </div>
+       </div>
+       
+   </div> 
+    <div id="scelta" style="text-align:center;">  
+    <br />     
+       <button class="bottonev" id="calcola" onclick="controllo ()">Calcola</button>
+       <button class="bottoner" type="reset" value="Reset">Reset </button>
+                                         <br />
+      <div id="attenzione"></div>  
+     </div>    
+     
+       </div>
+                                                     <br /> 
+<div id="risultati">   
+                         
+<div id="boxalert">     </div>
+
+  <br /><br />
+<div id="tempo"></div>      <br /><br />
+<div id="disclaimer"><p style="font:italic 10px Arial;color:#333; text-align:center;">Il calcolatore indica dei valori
+approssimativi basati sulle informazioni immesse. Gli autori non sono responsabili di eventuali errori</p>
+</div>
+ <div id="scelta1" style="text-align:center;">
+ <button class="bottoner" id="ripeti" onclick="ripeti ()">Ripeti</button>
+</div>
+ </div>
+</div>
+<br />
+<br />
+
+
+
+  </body>
+</html>
