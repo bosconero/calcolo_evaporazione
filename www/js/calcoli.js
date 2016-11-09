@@ -50,6 +50,7 @@ var ur=document.getElementById('umidita').value;
 var velwind=document.getElementById('velvento').value;
 var qcem=document.getElementById('quantcem').value;
 var spesscls=document.getElementById('spesspav').value;
+var cespo=document.getElementById('classe').value;
 
 ktempcls=(tempcls*1)+18;
 fattempcls=Math.pow(ktempcls,2.5);
@@ -74,15 +75,30 @@ alertfess="<span style='font:normal 14px arial; color:#333333'>Alle attuali cond
 }
 boxalert.innerHTML=alertfess;
 
+
 //formula acqua da evaporare
-aacqua=0.4*qcem;
-bacqua=170-aacqua;
-cacqua=(spesscls/100)*bacqua;
-acquaevap=cacqua-2;       ;
+if(cespo=="XC1"){
+var cemtot=0.60;}else if(cespo=="XC2") {
+cemtot=0.6;
+}else if(cespo=="XC3"){
+cemtot=0.55;
+}else if(cespo=="XC4"){
+cemtot=0.5;
+}
+acquaevap=((cemtot*qcem)-(0.4*qcem))/spesscls;
 
 //calcolo tempo
-tempfratt=acquaevap/ratevap;
-tempfr=Math.round(tempfratt*Math.pow(10,2))/Math.pow(10,2);
+
+if(tempair >20){
+var tempfratt=7-((tempair-20)*0.3)+(acquaevap/100);
+}
+else if(tempair < 20){
+tempfratt=((20-tempair)*0.58)+7+(acquaevap/100);
+}
+else if(tempair == 20){
+tempfratt=7.01+(acquaevap/100);
+}
+tempfr=tempfratt;
 htempfr=Math.floor(tempfr);
 ktempfr=tempfr-Math.floor(tempfr);
 minktempfr=ktempfr*60;
